@@ -1,8 +1,8 @@
 class GetPrimes
   attr_reader :num_primes
 
-  def initialize(num_primes=10)
-    @num_primes = num_primes
+  def initialize(num_primes=nil)
+    @num_primes = num_primes || 10
   end
 
   def perform
@@ -17,7 +17,7 @@ class GetPrimes
       end
       test_number = test_number + 1
     end
-    
+
     final_array
   end
 
